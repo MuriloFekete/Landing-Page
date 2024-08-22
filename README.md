@@ -1,4 +1,4 @@
 # Landing-Page
  Projeto de Landing-Page-News
-![Logo do Projeto](img/index.jpg)
+![Logo do Projeto](img/index.JPG)
 
