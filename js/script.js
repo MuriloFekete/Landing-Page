@@ -3,13 +3,18 @@ const msgErro = document.querySelector('.modal_msg_erro')
 const msgSucesso = document.querySelector('.modal_msg_sucesso')
 const modalEnviar = document.querySelector('.modal_enviar')
 const btnEnviar = document.querySelector('.btn_enviar')
+const textErro = document.querySelector('.erro_nome')
+const textEmail = document.querySelector('.erro_email')
 
 const validarDados = ({ nome, email}) => {
     
     const nomeValido = nome && nome.length >= 3
     const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$/
     const emailValido = email && emailRegex.test(email)
-  
+    
+    nomeValido ? textErro.textContent = '' : textErro.textContent = 'O nome é obrigatório e precisa ter no mínimo 3 caracteres'
+    emailValido ? textEmail.textContent = '' : textEmail.textContent = 'O email é obrigatório e precisa ser válido'
+
     return {
         nomeValido,
         emailValido
