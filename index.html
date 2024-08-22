@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page 📰​ NewsLetter</title>
+</head>
+
+<body>
+    <dialog class="modal_enviar">
+        <div class="modal_content">
+            <p class="modal_msg_sucesso">E-mail cadastrado com <span class="sucesso">sucesso</span></p>
+            <p class="modal_msg_erro">E-mail <span class="erro">não</span> cadastrado</p>
+            <button type="button" class="btn btn_fechar">Fechar</button>
+        </div>
+    </dialog>
+
+
+    <header>
+        <span class="header_logo">
+            <a href="#">
+                <span class="logo">🚀</span>
+                <span class="texto">Fekete</span>
+            </a>
+        </span>
+
+        <button type="button" class="btn btn_comprar">COMPRAR EBOOK</button>
+    </header>
+
+
+    <main>
+        <section class="section_content">
+            <h2>Seja bem-vindo a sua melhor newsletter</h2>
+
+            <h3>Fique por dentro de todas novidades</h3>
+
+            <p>Preencha os campos para receber notícias sobre programação</p>
+
+            <form action="">
+
+                <div class="inputs">
+                    <label for="input_nome">Nome</label>
+                    <input type="text" id="input_nome" class="input_nome" autofocus>
+                    <span class="erro_nome erro"></span>
+                </div>
+
+                <div class="inputs">
+                    <label for="input_email">E-mail</label>
+                    <input type="email" id="input_email" class="input_email" placeholder="example@gmail.com">
+                    <span class="erro_email erro"></span>
+
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="btn btn_enviar">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        Produzido por Murilo Fekete &copy; 2024 | Inspirado no Desafio eFront do Iuri Code
+    </footer>
+    <script src="js/script.js" defer> </script>
+</body>
+
+</html>
